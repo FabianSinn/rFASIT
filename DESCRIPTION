@@ -9,4 +9,5 @@ Description: FASIT convenience functions
 License: AGPLv3
 Depends:
     plyr,
-    stringr
+    stringr,
+    data.table

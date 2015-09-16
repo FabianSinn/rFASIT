@@ -41,9 +41,9 @@ getFasitDokDf <- function(file) {
       return(df_row)
    })
    
-   df <- ldply(rows)
+   df <- data.table(ldply(rows))
    df$ANALYS <- sapply(df$ANALYS, function(i) { if(!is.na(i)) return(paste0("DATABAS        ", i)) else return(i) } )
-
+   
    return(df)
 }
 
